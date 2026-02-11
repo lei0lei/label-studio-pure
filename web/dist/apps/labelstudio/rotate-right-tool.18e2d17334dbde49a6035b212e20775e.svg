@@ -1,0 +1,68 @@
+var _g, _defs;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+import { forwardRef } from "react";
+var SvgRotateRightTool = function SvgRotateRightTool(props, ref) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 32 32",
+    ref: ref
+  }, props), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#rotate-right-tool_svg__a)"
+  }, /*#__PURE__*/React.createElement("rect", {
+    width: 17,
+    height: 15,
+    fill: "currentColor",
+    opacity: 0.4,
+    rx: 3,
+    transform: "scale(-1 1)rotate(5 -111.32 -239.69)"
+  }), /*#__PURE__*/React.createElement("path", {
+    stroke: "currentColor",
+    strokeLinecap: "round",
+    strokeWidth: 2,
+    d: "M26 14c1-5-3-10-9-8",
+    opacity: 0.4
+  }), /*#__PURE__*/React.createElement("g", {
+    filter: "url(#rotate-right-tool_svg__b)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    d: "M25.737 12h.526c1.645 0 2.467 0 2.75.528s-.173 1.213-1.086 2.581l-.263.395c-.753 1.129-1.129 1.693-1.664 1.693s-.912-.564-1.664-1.693l-.263-.395c-.913-1.368-1.369-2.053-1.086-2.58C23.27 12 24.092 12 25.737 12"
+  })))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "rotate-right-tool_svg__a"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "#fff",
+    d: "M32 0H0v32h32z"
+  })), /*#__PURE__*/React.createElement("filter", {
+    id: "rotate-right-tool_svg__b",
+    width: 12.193,
+    height: 11.197,
+    x: 19.904,
+    y: 10,
+    colorInterpolationFilters: "sRGB",
+    filterUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("feFlood", {
+    floodOpacity: 0,
+    result: "BackgroundImageFix"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    "in": "SourceAlpha",
+    result: "hardAlpha",
+    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+  }), /*#__PURE__*/React.createElement("feOffset", {
+    dy: 1
+  }), /*#__PURE__*/React.createElement("feGaussianBlur", {
+    stdDeviation: 1.5
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in2: "BackgroundImageFix",
+    result: "effect1_dropShadow"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    "in": "SourceGraphic",
+    in2: "effect1_dropShadow",
+    result: "shape"
+  })))));
+};
+var ForwardRef = /*#__PURE__*/forwardRef(SvgRotateRightTool);
+export { ForwardRef as ReactComponent };
+export default "data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzIgMzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfcm90YXRlX3JpZ2h0KSI+DQo8cmVjdCBvcGFjaXR5PSIwLjQiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNSIgcng9IjMiIHRyYW5zZm9ybT0ibWF0cml4KC0wLjk5NjE5NSAwLjA4NzE1NTcgMC4wODcxNTU3IDAuOTk2MTk1IDIxLjMxNCA4Ljc5MDA0KSIgZmlsbD0iY3VycmVudENvbG9yIi8+DQo8cGF0aCBvcGFjaXR5PSIwLjQiIGQ9Ik0yNS45OTk5IDE0QzI2Ljk5OTkgOSAyMi45OTk5IDQgMTYuOTk5OSA2IiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4NCjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX3JvdGF0ZV9yaWdodCkiPg0KPHBhdGggZD0iTTI1LjczNyAxMkgyNi4yNjNDMjcuOTA4IDEyIDI4LjczMDUgMTIgMjkuMDEzMiAxMi41MjgxQzI5LjI5NTggMTMuMDU2MyAyOC44Mzk2IDEzLjc0MDcgMjcuOTI3MSAxNS4xMDk0TDI3LjY2NDEgMTUuNTAzOEMyNi45MTE1IDE2LjYzMjggMjYuNTM1MiAxNy4xOTcyIDI2IDE3LjE5NzJDMjUuNDY0OCAxNy4xOTcyIDI1LjA4ODUgMTYuNjMyOCAyNC4zMzU5IDE1LjUwMzhMMjQuMDcyOSAxNS4xMDk0QzIzLjE2MDQgMTMuNzQwNyAyMi43MDQyIDEzLjA1NjMgMjIuOTg2OCAxMi41MjgxQzIzLjI2OTUgMTIgMjQuMDkyIDEyIDI1LjczNyAxMloiIGZpbGw9ImN1cnJlbnRDb2xvciIvPg0KPC9nPg0KPC9nPg0KPGRlZnM+DQo8ZmlsdGVyIGlkPSJmaWx0ZXIwX3JvdGF0ZV9yaWdodCIgeD0iMTkuOTAzNiIgeT0iMTAiIHdpZHRoPSIxMi4xOTI3IiBoZWlnaHQ9IjExLjE5NzIiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4NCjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+DQo8ZmVDb2xvck1hdHJpeCBpbj0iU291cmNlQWxwaGEiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIgcmVzdWx0PSJoYXJkQWxwaGEiLz4NCjxmZU9mZnNldCBkeT0iMSIvPg0KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMS41Ii8+DQo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC40IDAiLz4NCjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93Ii8+DQo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluPSJTb3VyY2VHcmFwaGljIiBpbjI9ImVmZmVjdDFfZHJvcFNoYWRvdyIgcmVzdWx0PSJzaGFwZSIvPg0KPC9maWx0ZXI+DQo8Y2xpcFBhdGggaWQ9ImNsaXAwX3JvdGF0ZV9yaWdodCI+DQo8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAzMiAwKSIvPg0KPC9jbGlwUGF0aD4NCjwvZGVmcz4NCjwvc3ZnPg0K";

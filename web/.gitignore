@@ -6,7 +6,7 @@ tmp
 
 # dependencies
 node_modules
-dist
+# dist
 
 # IDEs and editors
 /.idea
@@ -122,6 +122,6 @@ libs/datamanager/e2e/output
 
 libs/datamanager/.cache
 
-dist
+# dist
 .cursor/rules/nx-rules.mdc
 .github/instructions/nx.instructions.md

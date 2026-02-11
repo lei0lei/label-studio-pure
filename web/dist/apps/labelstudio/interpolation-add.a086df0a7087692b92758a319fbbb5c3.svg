@@ -1,0 +1,26 @@
+var _path, _path2, _path3;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+import { forwardRef } from "react";
+var SvgInterpolationAdd = function SvgInterpolationAdd(props, ref) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 24,
+    height: 24,
+    fill: "none",
+    ref: ref
+  }, props), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    fillOpacity: 0.3,
+    d: "M6 12a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    d: "M14 12a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2h-8a1 1 0 0 1-1-1"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    d: "M18 8a1 1 0 1 1 2 0v8a1 1 0 1 1-2 0zM2.828 14.828c-1.333-1.333-2-2-2-2.828s.667-1.495 2-2.828l.344-.344c1.333-1.333 2-2 2.828-2s1.495.667 2.828 2l.344.344c1.333 1.333 2 2 2 2.828s-.667 1.495-2 2.828l-.344.344c-1.333 1.333-2 2-2.828 2s-1.495-.667-2.828-2z"
+  })));
+};
+var ForwardRef = /*#__PURE__*/forwardRef(SvgInterpolationAdd);
+export { ForwardRef as ReactComponent };
+export default "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik02IDExLjk5OThDNiAxMS40NDc1IDYuNDQ3NzIgMTAuOTk5OCA3IDEwLjk5OThIMjNDMjMuNTUyMyAxMC45OTk4IDI0IDExLjQ0NzUgMjQgMTEuOTk5OEMyNCAxMi41NTIgMjMuNTUyMyAxMi45OTk4IDIzIDEyLjk5OThIN0M2LjQ0NzcyIDEyLjk5OTggNiAxMi41NTIgNiAxMS45OTk4WiIgZmlsbD0iY3VycmVudENvbG9yIiBmaWxsLW9wYWNpdHk9IjAuMyIvPg0KPHBhdGggZD0iTTE0IDEyQzE0IDExLjQ0NzcgMTQuNDQ3NyAxMSAxNSAxMUgyM0MyMy41NTIzIDExIDI0IDExLjQ0NzcgMjQgMTJDMjQgMTIuNTUyMyAyMy41NTIzIDEzIDIzIDEzSDE1QzE0LjQ0NzcgMTMgMTQgMTIuNTUyMyAxNCAxMloiIGZpbGw9ImN1cnJlbnRDb2xvciIvPg0KPHBhdGggZD0iTTE4IDhDMTggNy40NDc3MiAxOC40NDc3IDcgMTkgN0MxOS41NTIzIDcgMjAgNy40NDc3MiAyMCA4VjE2QzIwIDE2LjU1MjMgMTkuNTUyMyAxNyAxOSAxN0MxOC40NDc3IDE3IDE4IDE2LjU1MjMgMTggMTZWOFoiIGZpbGw9ImN1cnJlbnRDb2xvciIvPg0KPHBhdGggZD0iTTIuODI4NDMgMTQuODI4NEMxLjQ5NTA5IDEzLjQ5NTEgMC44Mjg0MjcgMTIuODI4NCAwLjgyODQyNyAxMkMwLjgyODQyNyAxMS4xNzE2IDEuNDk1MDkgMTAuNTA0OSAyLjgyODQzIDkuMTcxNTdMMy4xNzE1NyA4LjgyODQzQzQuNTA0OTEgNy40OTUwOSA1LjE3MTU3IDYuODI4NDMgNiA2LjgyODQzQzYuODI4NDMgNi44Mjg0MyA3LjQ5NTA5IDcuNDk1MDkgOC44Mjg0MyA4LjgyODQzTDkuMTcxNTcgOS4xNzE1N0MxMC41MDQ5IDEwLjUwNDkgMTEuMTcxNiAxMS4xNzE2IDExLjE3MTYgMTJDMTEuMTcxNiAxMi44Mjg0IDEwLjUwNDkgMTMuNDk1MSA5LjE3MTU3IDE0LjgyODRMOC44Mjg0MyAxNS4xNzE2QzcuNDk1MDkgMTYuNTA0OSA2LjgyODQzIDE3LjE3MTYgNiAxNy4xNzE2QzUuMTcxNTcgMTcuMTcxNiA0LjUwNDkxIDE2LjUwNDkgMy4xNzE1NyAxNS4xNzE2TDIuODI4NDMgMTQuODI4NFoiIGZpbGw9ImN1cnJlbnRDb2xvciIvPg0KPC9zdmc+DQo=";

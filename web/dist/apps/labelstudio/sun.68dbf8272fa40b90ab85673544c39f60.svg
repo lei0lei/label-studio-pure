@@ -1,0 +1,52 @@
+var _g, _defs;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+import { forwardRef } from "react";
+var SvgSun = function SvgSun(props, ref) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 30,
+    height: 30,
+    fill: "none",
+    ref: ref
+  }, props), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    filter: "url(#sun_svg__a)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "#F4AA2A",
+    fillRule: "evenodd",
+    d: "M19.63 8.071a8.333 8.333 0 1 0-9.26 13.857 8.333 8.333 0 0 0 9.26-13.857",
+    clipRule: "evenodd"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("filter", {
+    id: "sun_svg__a",
+    width: 28.667,
+    height: 28.667,
+    x: 0.667,
+    y: 0.667,
+    colorInterpolationFilters: "sRGB",
+    filterUnits: "userSpaceOnUse"
+  }, /*#__PURE__*/React.createElement("feFlood", {
+    floodOpacity: 0,
+    result: "BackgroundImageFix"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    "in": "SourceAlpha",
+    result: "hardAlpha",
+    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+  }), /*#__PURE__*/React.createElement("feOffset", null), /*#__PURE__*/React.createElement("feGaussianBlur", {
+    stdDeviation: 3
+  }), /*#__PURE__*/React.createElement("feComposite", {
+    in2: "hardAlpha",
+    operator: "out"
+  }), /*#__PURE__*/React.createElement("feColorMatrix", {
+    values: "0 0 0 0 0.956863 0 0 0 0 0.666667 0 0 0 0 0.164706 0 0 0 0.3 0"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    in2: "BackgroundImageFix",
+    result: "effect1_dropShadow_816_13356"
+  }), /*#__PURE__*/React.createElement("feBlend", {
+    "in": "SourceGraphic",
+    in2: "effect1_dropShadow_816_13356",
+    result: "shape"
+  })))));
+};
+var ForwardRef = /*#__PURE__*/forwardRef(SvgSun);
+export { ForwardRef as ReactComponent };
+export default "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2RfODE2XzEzMzU2KSI+DQo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE5LjYyOTggOC4wNzEwNUMxOC4yNTk0IDcuMTU1MzcgMTYuNjQ4MyA2LjY2NjYzIDE1LjAwMDEgNi42NjY2M0MxMi43ODk5IDYuNjY2NjMgMTAuNjcwMyA3LjU0NDYgOS4xMDc1MiA5LjEwNzRDNy41NDQ3MiAxMC42NzAyIDYuNjY2NzUgMTIuNzg5OCA2LjY2Njc1IDE1QzYuNjY2NzUgMTYuNjQ4MSA3LjE1NTQ5IDE4LjI1OTMgOC4wNzExNyAxOS42Mjk3QzguOTg2ODUgMjEuMDAwMSAxMC4yODgzIDIyLjA2ODIgMTEuODExMSAyMi42OTlDMTMuMzMzOCAyMy4zMjk3IDE1LjAwOTMgMjMuNDk0NyAxNi42MjU4IDIzLjE3MzJDMTguMjQyMyAyMi44NTE2IDE5LjcyNzIgMjIuMDU4IDIwLjg5MjYgMjAuODkyNUMyMi4wNTgxIDE5LjcyNzEgMjIuODUxOCAxOC4yNDIyIDIzLjE3MzMgMTYuNjI1N0MyMy40OTQ4IDE1LjAwOTIgMjMuMzI5OCAxMy4zMzM2IDIyLjY5OTEgMTEuODEwOUMyMi4wNjgzIDEwLjI4ODIgMjEuMDAwMiA4Ljk4NjcyIDE5LjYyOTggOC4wNzEwNVoiIGZpbGw9IiNGNEFBMkEiLz4NCjwvZz4NCjxkZWZzPg0KPGZpbHRlciBpZD0iZmlsdGVyMF9kXzgxNl8xMzM1NiIgeD0iMC42NjY3NDgiIHk9IjAuNjY2NjI2IiB3aWR0aD0iMjguNjY2NyIgaGVpZ2h0PSIyOC42NjY2IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+DQo8ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPg0KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+DQo8ZmVPZmZzZXQvPg0KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMyIvPg0KPGZlQ29tcG9zaXRlIGluMj0iaGFyZEFscGhhIiBvcGVyYXRvcj0ib3V0Ii8+DQo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwLjk1Njg2MyAwIDAgMCAwIDAuNjY2NjY3IDAgMCAwIDAgMC4xNjQ3MDYgMCAwIDAgMC4zIDAiLz4NCjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzgxNl8xMzM1NiIvPg0KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfODE2XzEzMzU2IiByZXN1bHQ9InNoYXBlIi8+DQo8L2ZpbHRlcj4NCjwvZGVmcz4NCjwvc3ZnPg0K";
