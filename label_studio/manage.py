@@ -5,6 +5,7 @@ import os
 import sys
 
 if __name__ == '__main__':
+    sys.path.insert(0, os.path.dirname(__file__))
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings.label_studio')
     # os.environ.setdefault('DEBUG', 'True')
     try:

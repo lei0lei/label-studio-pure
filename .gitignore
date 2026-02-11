@@ -11,7 +11,7 @@ docs/data/
 etc/
 /src/
 yarn-error.log
-/dist/
+# /dist/
 
 # mobile/builds
 db/
@@ -84,3 +84,5 @@ docker-compose.override.yml
 CLAUDE.local.md
 web/libs/editor/tests/coverage
 .cache
+
+embedded_python/Lib
