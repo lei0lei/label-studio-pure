@@ -1,0 +1,1 @@
+小体积版label studio,只用于python部署
