@@ -6,6 +6,7 @@ import { Button } from "@humansignal/ui";
 import { HeidiSpeaking } from "../../assets/images";
 import type { HeidiTipProps, Tip } from "./types";
 import { createURL } from "./utils";
+import { useTranslation } from 'react-i18next';
 
 const HeidiLink: FC<{ link: Tip["link"]; onClick: () => void }> = ({ link, onClick }) => {
   const url = useMemo(() => {
@@ -29,6 +30,7 @@ const HeidiLink: FC<{ link: Tip["link"]; onClick: () => void }> = ({ link, onCli
 };
 
 export const HeidiTip: FC<HeidiTipProps> = ({ tip, onDismiss, onLinkClick }) => {
+  const { t } = useTranslation();
   const handleClick = useCallback((event: MouseEvent) => {
     event.preventDefault();
     event.stopPropagation();
@@ -39,15 +41,15 @@ export const HeidiTip: FC<HeidiTipProps> = ({ tip, onDismiss, onLinkClick }) => 
     <div className={cn("heidy-tip").toClassName()}>
       <div className={cn("heidy-tip").elem("content").toClassName()}>
         <div className={cn("heidy-tip").elem("header").toClassName()}>
-          <div className={cn("heidy-tip").elem("title").toClassName()}>{tip.title}</div>
+          <div className={cn("heidy-tip").elem("title").toClassName()}>{t(tip.title)}</div>
           {tip.closable && (
-            <Button tooltip="Don't show" look="string" size="small" onClick={handleClick} className="!p-0">
+            <Button tooltip={t('dont_show')} look="string" size="small" onClick={handleClick} className="!p-0">
               <IconCross />
             </Button>
           )}
         </div>
         <div className={cn("heidy-tip").elem("text").toClassName()}>
-          {tip.content}
+          {t(tip.content)}
           <HeidiLink link={tip.link} onClick={onLinkClick} />
         </div>
       </div>

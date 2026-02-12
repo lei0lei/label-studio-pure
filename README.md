@@ -2,6 +2,7 @@
 
 本地构建运行如下命令:
 ```
+embedded_python\python.exe get-pip.py
 embedded_python\python.exe -m pip install setuptools wheel --target embedded_python\Lib\site-packages
 ```
 

@@ -1,0 +1,66 @@
+{
+	"welcome": "Welcome",
+	"get_started": "Let's get you started.",
+	"labeling_instructions": "Labeling Instructions",
+	"save": "Save",
+	"annotation_settings": "Annotation Settings",
+	"account_settings": "Account & Settings",
+	"logout": "Log Out",
+	"check_notification_settings": "Please check new notification settings in the Account & Settings page",
+	"home": "Home",
+	"projects": "Projects",
+	"organization": "Organization",
+	"api": "API",
+	"docs": "Docs",
+	"github": "GitHub",
+	"slack_community": "Slack Community",
+	"unpin_menu": "Unpin menu",
+	"pin_menu": "Pin menu",
+	"documentation": "Documentation",
+	"api_documentation": "API Documentation",
+	"release_notes": "Release Notes",
+	"blog": "LabelStud.io Blog",
+	"create_project": "Create Project",
+	"invite_members": "Invite Members",
+	"recent_projects": "Recent Projects",
+	"view_all": "View All",
+	"create_first_project": "Create your first project",
+	"import_and_setup": "Import your data and set up the labeling interface to start annotating",
+	"create_new_project": "Create new project",
+	"resources": "Resources",
+	"learn_explore_help": "Learn, explore and get help",
+	"version_community": "Label Studio Version: Community",
+	"version_available": "{{version}} Available",
+	"current_version": "Current version: {{version}}",
+	"version_short": "v{{version}}",
+	"dont_show": "Don't show again",
+	"heidi_tips": {
+		"title": "Heidi Tips",
+		"tip1": {
+			"title": "Welcome to Label Studio!",
+			"content": "Start labeling your first project and experience powerful data annotation features.",
+			"link": "View Guide"
+		},
+		"tip2": {
+			"title": "Need help?",
+			"content": "Visit the FAQ for help and support.",
+			"link": "Go to FAQ"
+		}
+	},
+	"dialog": {
+		"cancel": "Cancel",
+		"confirm": "Confirm"
+	},
+	"settings": {
+		"title": "Settings",
+		"language": "Language",
+		"english": "English",
+		"chinese": "Chinese",
+		"save": "Save"
+	},
+	"error_boundary": {
+		"title": "An error occurred",
+		"message": "Something went wrong. Please refresh the page.",
+		"reload": "Reload Page"
+	}
+}

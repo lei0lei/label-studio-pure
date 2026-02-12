@@ -1,3 +1,4 @@
+
 import { Menubar } from "../components/Menubar/Menubar";
 import { ProjectRoutes } from "../routes/ProjectRoutes";
 import { useOrgValidation } from "../hooks/useOrgValidation";
@@ -15,6 +16,7 @@ export const RootPage = ({ content }) => {
       onSidebarToggle={(visible) => localStorage.setItem("sidebar-opened", visible)}
       onSidebarPin={(pinned) => localStorage.setItem("sidebar-pinned", pinned)}
     >
+      {/* 语言切换按钮已集成到顶部菜单栏 */}
       <ProjectRoutes content={content} />
     </Menubar>
   );

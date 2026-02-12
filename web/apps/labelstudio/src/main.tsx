@@ -1,3 +1,5 @@
+
+import './utils/i18n';
 import { registerAnalytics } from "@humansignal/core";
 registerAnalytics();
 

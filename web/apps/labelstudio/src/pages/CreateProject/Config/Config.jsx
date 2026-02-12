@@ -1,4 +1,6 @@
 import React, { useEffect, useMemo, useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
+import "../../../utils/i18n";
 import CM from "codemirror";
 import { Button, cnm } from "@humansignal/ui";
 import { IconTrash, IconInfoOutline } from "@humansignal/icons";
@@ -37,6 +39,7 @@ const configClass = cn("configure");
  * Wrapped in React.memo to prevent unnecessary re-renders when parent re-renders.
  */
 const AdaptivePreview = React.memo(({ config, hasPendingUpdate, onUpdatePreview, isUpdating, ...previewProps }) => {
+  const { t } = useTranslation();
   const isFeatureEnabled = ff.isActive(ff.FF_PREVIEW_PERFORMANCE);
 
   // Memoize tag count calculation to avoid re-computing on every render
@@ -51,9 +54,9 @@ const AdaptivePreview = React.memo(({ config, hasPendingUpdate, onUpdatePreview,
       <div className={configClass.elem("preview-container")}>
         <div className={configClass.elem("preview-info-banner")}>
           <IconInfoOutline width={16} height={16} />
-          <span>{LARGE_CONFIG_MESSAGE}</span>
+          <span>{t("large_config_message", LARGE_CONFIG_MESSAGE)}</span>
           <Button size="small" onClick={onUpdatePreview} waiting={isUpdating} disabled={isUpdating}>
-            {isUpdating ? "Updating..." : "Update Preview"}
+            {isUpdating ? t("updating", "Updating...") : t("update_preview", "Update Preview")}
           </Button>
         </div>
         <Preview config={config} {...previewProps} />
@@ -64,19 +67,21 @@ const AdaptivePreview = React.memo(({ config, hasPendingUpdate, onUpdatePreview,
   return <Preview config={config} {...previewProps} />;
 });
 
-const EmptyConfigPlaceholder = () => (
-  <div className={configClass.elem("empty-config")}>
-    <p>Your labeling configuration is empty. It is required to label your data.</p>
-    <p>
-      Start from one of our predefined templates or create your own config on the Code panel. The labeling config is
-      XML-based and you can{" "}
-      <a href="https://labelstud.io/tags/" target="_blank" rel="noreferrer">
-        read about the available tags in our documentation
-      </a>
-      .
-    </p>
-  </div>
-);
+const EmptyConfigPlaceholder = () => {
+  const { t } = useTranslation();
+  return (
+    <div className={configClass.elem("empty-config")}> 
+      <p>{t("empty_labeling_config", "Your labeling configuration is empty. It is required to label your data.")}</p>
+      <p>
+        {t("start_from_template", "Start from one of our predefined templates or create your own config on the Code panel. The labeling config is XML-based and you can ")}
+        <a href="https://labelstud.io/tags/" target="_blank" rel="noreferrer">
+          {t("read_available_tags", "read about the available tags in our documentation")}
+        </a>
+        .
+      </p>
+    </div>
+  );
+};
 
 const Label = ({ label, template, color }) => {
   const value = label.getAttribute("value");
@@ -138,8 +143,8 @@ const ConfigureControl = ({ control, template }) => {
   return (
     <div className={configClass.elem("labels")}>
       <form className={configClass.elem("add-labels")} action="">
-        <h4>{tagname === "Choices" ? "Add choices" : "Add label names"}</h4>
-        <span>Use new line as a separator to add multiple labels</span>
+        <h4>{tagname === "Choices" ? t("add_choices", "Add choices") : t("add_label_names", "Add label names")}</h4>
+        <span>{t("use_newline_separator", "Use new line as a separator to add multiple labels")}</span>
         <textarea
           name="labels"
           id=""
@@ -149,13 +154,13 @@ const ConfigureControl = ({ control, template }) => {
           onKeyPress={onKeyPress}
           className="lsf-textarea-ls p-2 px-3"
         />
-        <Button type="button" size="small" look="outlined" onClick={onAddLabels} aria-label="Add labels">
-          Add
+        <Button type="button" size="small" look="outlined" onClick={onAddLabels} aria-label={t("add_labels", "Add labels")}>
+          {t("add", "Add")}
         </Button>
       </form>
-      <div className={configClass.elem("current-labels")}>
+      <div className={configClass.elem("current-labels")}> 
         <h3>
-          {tagname === "Choices" ? "Choices" : "Labels"} ({control.children.length})
+          {tagname === "Choices" ? t("choices", "Choices") : t("labels", "Labels")} ({control.children.length})
         </h3>
         <ul>
           {Array.from(control.children).map((label) => (
@@ -260,10 +265,10 @@ const ConfigureSettings = ({ template }) => {
 
   return (
     <ul className={configClass.elem("settings")}>
-      <li>
-        <h4>Configure settings</h4>
-        <ul className={configClass.elem("object-settings")}>{items}</ul>
-      </li>
+          <li>
+            <h4>{t("configure_settings", "Configure settings")}</h4>
+            <ul className={configClass.elem("object-settings")}>{items}</ul>
+          </li>
     </ul>
   );
 };
@@ -357,15 +362,12 @@ const ConfigureColumns = ({ columns, template }) => {
 
   return (
     <div className={configClass.elem("object")}>
-      <h4>Configure data</h4>
+      <h4>{t("configure_data", "Configure data")}</h4>
       {template.objects.length > 1 && columns?.length > 0 && columns.length < template.objects.length && (
-        <p className={configClass.elem("object-error")}>This template requires more data then you have for now</p>
+        <p className={configClass.elem("object-error")}>{t("template_requires_more_data", "This template requires more data then you have for now")}</p>
       )}
       {columns?.length === 0 && (
-        <p className={configClass.elem("object-error")}>
-          To select which field(s) to label you need to upload the data. Alternatively, you can provide it using Code
-          mode.
-        </p>
+        <p className={configClass.elem("object-error")}>{t("select_fields_upload_data", "To select which field(s) to label you need to upload the data. Alternatively, you can provide it using Code mode.")}</p>
       )}
       {template.objects.map((obj) => (
         <ConfigureColumn key={obj.getAttribute("name")} {...{ obj, template, columns }} />
